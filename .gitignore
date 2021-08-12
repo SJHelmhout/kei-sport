@@ -2,7 +2,6 @@
 node_modules
 /dist
 /src/docs
-/src/store
 
 # local env files
 .env.local

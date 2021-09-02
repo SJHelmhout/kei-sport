@@ -1,18 +1,21 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <h1>Home</h1>
+    <div>{{ message }}</div>
+    <MessageBox class="message-box-red" message="hoi" />
+    <MessageBox message="bla" />
+    <MessageBox />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import MessageBox from "@/components/MessageBox";
 
 export default {
   name: "Home",
-  components: {
-    HelloWorld,
-  },
+  components: { MessageBox },
+  props: ["message"],
 };
 </script>
+
+<style scoped></style>

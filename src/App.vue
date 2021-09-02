@@ -1,10 +1,30 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      NAV
+      <router-link
+        :to="{
+          name: 'Home',
+          params: {
+            message: 'Hoi1',
+          },
+        }"
+        >Home</router-link
+      >
+      <router-link
+        :to="{
+          name: 'Home2',
+          params: {
+            message: 'Hoi2',
+          },
+        }"
+        >Home2</router-link
+      >
     </div>
-    <router-view />
+    <main>
+      MAIN
+      <router-view />
+    </main>
   </div>
 </template>
 
@@ -15,11 +35,16 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  main {
+    padding: 3rem;
+    background: #ddd;
+  }
 }
 
 #nav {
   padding: 30px;
-
+  background: #eee;
+  margin-bottom: 2rem;
   a {
     font-weight: bold;
     color: #2c3e50;

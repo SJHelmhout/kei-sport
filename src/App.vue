@@ -1,39 +1,31 @@
 <template>
   <div id="app">
     <div id="nav">
-      NAV
       <router-link
         :to="{
           name: 'Home',
           params: {
-            message: 'Hoi1',
+            message: 'Hoi',
           },
         }"
       >
-        Home</router-link
-      >
+        Home
+      </router-link>
       <router-link
         :to="{
-          name: 'Home2',
+          name: 'Login',
           params: {
-            message: 'Hoi2',
+            message: 'Login',
           },
         }"
       >
-        Home2</router-link
-      >
-      <router-link
-        :to="{
-          name: 'chose_practise',
-          params: {
-            message: 'chose_practise',
-          },
-        }"
-      >
+        Login
+      </router-link>
+      <router-link :to="{ name: 'WorkoutsAndPractises' }"
+        >WorkoutsAndPractises
       </router-link>
     </div>
     <main>
-      MAIN
       <router-view />
     </main>
   </div>

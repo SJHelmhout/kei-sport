@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div>
+    <span class="workouts"> This is the WorkoutsAndPractises page</span>
+  </div>
 </template>
 
 <script>

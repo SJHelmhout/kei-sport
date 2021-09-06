@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "workouts_en_oefeningen",
+  name: "chosen_practise",
 };
 </script>
 

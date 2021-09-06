@@ -1,5 +1,12 @@
 <template>
-  <div></div>
+  <div>
+    <input
+      type="text"
+      name="username"
+      v-model="username"
+      placeholder="inlogcode"
+    />
+  </div>
 </template>
 
 <script>

@@ -9,7 +9,8 @@
             message: 'Hoi1',
           },
         }"
-        >Home</router-link
+      >
+        Home</router-link
       >
       <router-link
         :to="{
@@ -18,8 +19,18 @@
             message: 'Hoi2',
           },
         }"
-        >Home2</router-link
       >
+        Home2</router-link
+      >
+      <router-link
+        :to="{
+          name: 'chose_practise',
+          params: {
+            message: 'chose_practise',
+          },
+        }"
+      >
+      </router-link>
     </div>
     <main>
       MAIN

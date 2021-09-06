@@ -52,7 +52,9 @@ export default {
 .flex-container {
   display: flex;
   text-align: center;
-  flex-flow: column;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .flex-item {

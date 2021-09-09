@@ -1,34 +1,49 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link
+    <b-navbar variant="primary" type="dark">
+      <b-navbar-brand
         :to="{
           name: 'Home',
           params: {
             message: 'Hoi',
           },
         }"
+        >KeiSport</b-navbar-brand
       >
-        Home
-      </router-link>
-      <router-link
-        :to="{
-          name: 'Login',
-          params: {
-            message: 'Login',
-          },
-        }"
-      >
-        Login
-      </router-link>
-      <router-link
-        :to="{
-          name: 'WorkoutsAndPractises',
-        }"
-        >WorkoutsAndPractises
-      </router-link>
-      }
-    </div>
+      <b-navbar-nav>
+        <b-nav-item
+          :to="{
+            name: 'WorkoutsAndPractises',
+          }"
+        >
+          WorkoutsAndPractises
+        </b-nav-item>
+      </b-navbar-nav>
+      <b-navbar-nav class="ml-auto">
+        <b-nav-item
+          :to="{
+            name: 'Login',
+            params: {
+              message: 'Login',
+            },
+          }"
+        >
+          Login
+        </b-nav-item>
+      </b-navbar-nav>
+      <b-navbar-nav class="ml-auto">
+        <b-nav-item
+          :to="{
+            name: 'VoorbeeldStylingMetBootstrap',
+            params: {
+              message: 'VoorbeeldStylingMetBootstrap',
+            },
+          }"
+        >
+          VoorbeeldStylingMetBootstrap
+        </b-nav-item>
+      </b-navbar-nav>
+    </b-navbar>
     <main>
       <router-view />
     </main>
@@ -36,29 +51,19 @@
 </template>
 
 <style lang="scss">
+$primary: blue;
+$enable-shadows: true;
+$body-bg: #ddd;
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-vue";
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  main {
-    padding: 1rem;
-    background: #ddd;
-  }
 }
 
 #nav {
   padding: 30px;
-  background: #eee;
   margin-bottom: 2rem;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
 }
 </style>

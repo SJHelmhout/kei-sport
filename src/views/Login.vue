@@ -1,25 +1,19 @@
 <template>
-  <span class="flex-container">
-    <span class="flex-item">
-      <input
-        type="text"
-        name="username"
-        v-model="input.inlogcode"
-        placeholder="inlogcode"
-      />
-    </span>
-    <span class="flex-item">
+  <b-container class="py-5">
+    <div class="mb-3">
+      <b-form-input v-model="text" placeholder="inlogcode"></b-form-input>
+      <div class="mt-2">Inlogcode: {{ text }}</div>
+    </div>
+    <div class="mb-3">
       <input
         type="text"
         name="sessiecode"
         v-model="input.sessiecode"
         placeholder="sessiecode"
       />
-    </span>
-    <span class="flex-item">
-      <input type="button" v-on:click="login()" value="OK" />
-    </span>
-  </span>
+    </div>
+    <b-btn @click="login()" class="mb-3">Inloggen</b-btn>
+  </b-container>
 </template>
 
 <script>
@@ -48,29 +42,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.flex-container {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  background-color: #ddd;
-}
-
-.flex-item input {
-  width: 35rem;
-  height: 2rem;
-  border: 1px solid black;
-  border-radius: 10px;
-}
-
-.flex-item input[type="text"] {
-  padding-left: 1rem;
-}
-
-.flex-item input[type="button"] {
-  margin-top: 1rem;
-}
-</style>
+<style scoped></style>

@@ -1,40 +1,36 @@
 <template>
-  <div>
+  <b-container>
+    <b-row>
+      <b-col>
+        <b-card header="header" footer="footer">
+          <b-card-title>Title</b-card-title>
+          <b-card-sub-title>Subtitle</b-card-sub-title>
+          <b-card-text>Tekst</b-card-text>
+          <b-btn variant="primary">Hoi</b-btn>
+          <b-btn variant="danger">sfdsdfs</b-btn>
+        </b-card>
+      </b-col>
+      <b-col> 2 </b-col>
+      <b-col> 3 </b-col>
+    </b-row>
     <div class="row">
       <div class="col">This is the WorkoutsAndPractises page</div>
     </div>
 
-    <div class="row">
-      <div class="col2">workouts</div>
-      <div class="col2">oefeningen</div>
+    <div>
+      <div>workouts</div>
+      <div>oefeningen</div>
     </div>
 
-    <div class="row">
-      <table class="workouts">
-        <tr>
-          <td><WorkoutsAndPractisesFrame /></td>
-          <td><WorkoutsAndPractisesFrame /></td>
-        </tr>
-        <tr>
-          <td><WorkoutsAndPractisesFrame /></td>
-          <td><WorkoutsAndPractisesFrame /></td>
-        </tr>
-        <tr>
-          <td><WorkoutsAndPractisesFrame /></td>
-        </tr>
-      </table>
-      <table class="practises">
-        <tr>
-          <td><WorkoutsAndPractisesFrame /></td>
-          <td><WorkoutsAndPractisesFrame /></td>
-        </tr>
-        <tr>
-          <td><WorkoutsAndPractisesFrame /></td>
-          <td><WorkoutsAndPractisesFrame /></td>
-        </tr>
-      </table>
+    <div>
+      <div>
+        <WorkoutsAndPractisesFrame />
+        <WorkoutsAndPractisesFrame />
+        <WorkoutsAndPractisesFrame />
+        <WorkoutsAndPractisesFrame />
+      </div>
     </div>
-  </div>
+  </b-container>
 </template>
 
 <script>
@@ -46,30 +42,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.row {
-  display: flex;
-  justify-content: center;
-}
-.col {
-  flex: 1;
-
-  background-color: #42b983;
-}
-.col2 {
-  flex: 1;
-  padding: 20px 0 10px 0;
-
-  background-color: mediumvioletred;
-}
-table {
-  width: 100%;
-  border-spacing: 2rem;
-}
-.workouts {
-  background-color: aliceblue;
-}
-.practises {
-  background-color: aqua;
-}
-</style>
+<style scoped></style>

@@ -10,15 +10,29 @@
     </div>
 
     <div class="row">
-      <div class="col3"><WorkoutsAndPractisesFrame /></div>
-      <div class="col3"><WorkoutsAndPractisesFrame /></div>
-      <div class="col3"><WorkoutsAndPractisesFrame /></div>
-      <div class="col3"><WorkoutsAndPractisesFrame /></div>
-    </div>
-
-    <div class="row" style="background-color: #ffffff">
-      <div class="col3"><WorkoutsAndPractisesFrame /></div>
-      <div class="col3"><WorkoutsAndPractisesFrame /></div>
+      <table class="workouts">
+        <tr>
+          <td><WorkoutsAndPractisesFrame /></td>
+          <td><WorkoutsAndPractisesFrame /></td>
+        </tr>
+        <tr>
+          <td><WorkoutsAndPractisesFrame /></td>
+          <td><WorkoutsAndPractisesFrame /></td>
+        </tr>
+        <tr>
+          <td><WorkoutsAndPractisesFrame /></td>
+        </tr>
+      </table>
+      <table class="practises">
+        <tr>
+          <td><WorkoutsAndPractisesFrame /></td>
+          <td><WorkoutsAndPractisesFrame /></td>
+        </tr>
+        <tr>
+          <td><WorkoutsAndPractisesFrame /></td>
+          <td><WorkoutsAndPractisesFrame /></td>
+        </tr>
+      </table>
     </div>
   </div>
 </template>
@@ -35,6 +49,7 @@ export default {
 <style scoped>
 .row {
   display: flex;
+  justify-content: center;
 }
 .col {
   flex: 1;
@@ -47,9 +62,14 @@ export default {
 
   background-color: mediumvioletred;
 }
-.col3 {
-  float: left;
-  width: 50%;
-  padding: 20px;
+table {
+  width: 100%;
+  border-spacing: 2rem;
+}
+.workouts {
+  background-color: aliceblue;
+}
+.practises {
+  background-color: aqua;
 }
 </style>

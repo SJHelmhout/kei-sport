@@ -27,6 +27,13 @@
         }"
         >WorkoutsAndPractises
       </router-link>
+      <router-link
+        :to="{
+          name: 'WorkoutAndPractisesFrame',
+        }"
+        >WorkoutAndPractisesFrame</router-link
+      >
+      }
     </div>
     <main>
       <router-view />

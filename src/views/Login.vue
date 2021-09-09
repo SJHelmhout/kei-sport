@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-container">
+  <span class="flex-container">
     <span class="flex-item">
       <input
         type="text"
@@ -17,9 +17,9 @@
       />
     </span>
     <span class="flex-item">
-      <button type="button" v-on:click="login()">OK</button>
+      <input type="button" v-on:click="login()" value="OK" />
     </span>
-  </div>
+  </span>
 </template>
 
 <script>
@@ -55,9 +55,22 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  background-color: #ddd;
 }
 
-.flex-item {
-  padding-top: 1rem;
+.flex-item input {
+  width: 35rem;
+  height: 2rem;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.flex-item input[type="text"] {
+  padding-left: 1rem;
+}
+
+.flex-item input[type="button"] {
+  margin-top: 1rem;
 }
 </style>

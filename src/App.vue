@@ -21,7 +21,10 @@
       >
         Login
       </router-link>
-      <router-link :to="{ name: 'WorkoutsAndPractises' }"
+      <router-link
+        :to="{
+          name: 'WorkoutsAndPractises',
+        }"
         >WorkoutsAndPractises
       </router-link>
     </div>
@@ -39,7 +42,7 @@
   text-align: center;
   color: #2c3e50;
   main {
-    padding: 3rem;
+    padding: 1rem;
     background: #ddd;
   }
 }

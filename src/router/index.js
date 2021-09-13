@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import Login from "../views/Login.vue";
 import WorkoutsAndPractises from "@/views/WorkoutsAndPractises";
 import VoorbeeldStylingMetBootstrap from "@/views/VoorbeeldStylingMetBootstrap";
+import WorkoutsAndPractisesFrame from "@/components/WorkoutsAndPractisesFrame";
 
 Vue.use(VueRouter);
 
@@ -24,6 +25,12 @@ const routes = [
     path: "/",
     name: "WorkoutsAndPractises",
     component: WorkoutsAndPractises,
+    props: true,
+  },
+  {
+    path: "/",
+    name: "WorkoutsAndPractisesFrame",
+    component: WorkoutsAndPractisesFrame,
     props: true,
   },
   {

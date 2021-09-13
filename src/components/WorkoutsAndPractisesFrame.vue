@@ -11,7 +11,7 @@ export default {
 <style scoped>
 .rectangle {
   height: 5rem;
-  width: 7rem;
+  width: 5rem;
   border: 1px solid black;
   box-shadow: darkgray;
 }

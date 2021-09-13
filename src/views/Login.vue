@@ -1,16 +1,20 @@
 <template>
   <b-container class="py-5">
     <div class="mb-3">
-      <b-form-input v-model="text" placeholder="inlogcode"></b-form-input>
-      <div class="mt-2">Inlogcode: {{ text }}</div>
+      <div class="mt-2">Inlogcode: {{ inlogcode }}</div>
+      <b-form-input
+        type="text"
+        v-model="inlogcode"
+        placeholder="inlogcode"
+      ></b-form-input>
     </div>
     <div class="mb-3">
-      <input
+      <div class="mt-2">Sessiecode: {{ sessiecode }}</div>
+      <b-form-input
         type="text"
-        name="sessiecode"
-        v-model="input.sessiecode"
+        v-model="sessiecode"
         placeholder="sessiecode"
-      />
+      ></b-form-input>
     </div>
     <b-btn @click="login()" class="mb-3">Inloggen</b-btn>
   </b-container>
@@ -21,22 +25,17 @@ export default {
   name: "Login",
   data() {
     return {
-      input: {
-        inlogcode: "",
-        sessiecode: "",
-      },
+      inlogcode: "",
+      sessiecode: "",
     };
   },
   methods: {
     login() {
       console.log(
-        "inlocode = " +
-          this.input.inlogcode +
-          " sessiecode " +
-          this.input.sessiecode
+        "inlogcode: " + this.inlogcode + " sessiecode: " + this.sessiecode
       );
-      this.input.inlogcode = "";
-      this.input.sessiecode = "";
+      this.inlogcode = "";
+      this.sessiecode = "";
     },
   },
 };

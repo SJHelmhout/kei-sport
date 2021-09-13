@@ -1,18 +1,25 @@
 <template>
-  <div class="rectangle"></div>
+  <div>
+    <b-img
+      center
+      src="https://picsum.photos/125/125/?image=58"
+      alt="Center image"
+    ></b-img>
+  </div>
 </template>
 
 <script>
+let imgWorkout = "https://picsum.photos/125/125/?image=58";
+
 export default {
   name: "WorkoutAndPractisesFrame",
+  props: {
+    nameWorkout: [],
+    imageWorkout: [imgWorkout],
+    namePractises: [],
+    imagePractises: [],
+  },
 };
 </script>
 
-<style scoped>
-.rectangle {
-  height: 5rem;
-  width: 5rem;
-  border: 1px solid black;
-  box-shadow: darkgray;
-}
-</style>
+<style scoped></style>

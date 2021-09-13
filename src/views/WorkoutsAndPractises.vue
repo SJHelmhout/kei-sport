@@ -1,23 +1,23 @@
 <template>
-  <b-container>
-    <b-row>
-      <b-col>
+  <b-container class="bg-info" fluid="lg">
+    <b-row no-gutters>
+      <b-col class="my-2">
         <b-card footer="footer" style="width: max-content">
           <WorkoutAndPractisesFrame />
         </b-card>
       </b-col>
-      <b-col>
+      <b-col class="my-2">
         <b-card footer="footer" style="width: max-content">
           <WorkoutAndPractisesFrame />
         </b-card>
       </b-col>
-      <b-col cols="1"></b-col>
-      <b-col>
+      <b-col class="my-2" cols="1"></b-col>
+      <b-col class="my-2">
         <b-card footer="footer" style="width: max-content">
           <WorkoutAndPractisesFrame />
         </b-card>
       </b-col>
-      <b-col>
+      <b-col class="my-2">
         <b-card footer="footer" style="width: max-content">
           <WorkoutAndPractisesFrame />
         </b-card>

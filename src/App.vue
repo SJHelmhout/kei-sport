@@ -47,6 +47,7 @@
     <main>
       <router-view />
     </main>
+    <footer variant="primary" type="dark" class="text-center py-3">quit</footer>
   </div>
 </template>
 
